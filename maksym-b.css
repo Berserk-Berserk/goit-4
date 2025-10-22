@@ -1,0 +1,214 @@
+@font-face {
+  font-family: "BluuNextCyrillic";
+  src: url("./fonts/Bluu Next Cyrillic.woff") format("woff");
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1d1d1d;
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.container {
+  width: 1240px;
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.characters-section {
+  padding: 100px 0;
+}
+
+.characters-section__title {
+  color: #fabf59;
+  text-align: center;
+  font-family: "BluuNextCyrillic", sans-serif;
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 125%;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.characters-section__controls {
+  width: 100%;
+  max-width: 1240px;
+  border: 2px solid #fabf59;
+  border-radius: 50px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 50px;
+  background: #1d1d1d;
+  box-shadow: 0 0 20px rgba(250, 191, 89, 0.3);
+}
+
+.characters-section__search-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.characters-section__search-label {
+  color: #fabf59;
+  font-family: "BluuNextCyrillic", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#character-search {
+  width: 80%;
+  max-width: 600px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #fabf59;
+  background: #1d1d1d;
+  color: #fabf59;
+  padding: 0 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+}
+
+#character-search:focus {
+  border-color: #f9b50c;
+  box-shadow: 0 0 15px #f9b50c66;
+  outline: none;
+}
+
+.characters-section__filter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 100%;
+}
+
+.characters-section__filter-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 50px;
+  border: 1px solid #fabf59;
+  background: #1d1d1d;
+  color: #fff;
+  font-family: "BluuNextCyrillic", sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.characters-section__filter-btn img {
+  width: 24px;
+  height: 24px;
+}
+
+.characters-section__filter-btn:hover {
+  background: #fabf59;
+  color: #1d1d1d;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #fabf59aa;
+}
+
+.characters-section__filter-btn:hover .characters-section__btns-text {
+  color: #1d1d1d;
+}
+
+/* Карточки персонажей */
+.characters-section__characters {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.characters-section__characters-card {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 1;
+  transition: transform 0.15s ease;
+}
+
+.characters-section__characters-card:hover {
+  transform: scale(1.05) translateY(-5px);
+}
+
+.characters-section__characters-card-img {
+  width: 295px;
+  height: 452px;
+  border-radius: 20px;
+}
+
+.characters-section__characters-card-info {
+  position: absolute;
+  left: 20px;
+  bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  z-index: 3;
+}
+
+.characters-section__character-name {
+  color: #fff;
+  font-family: Inter;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.characters-section__character-descr,
+.characters-section__character-house,
+.characters-section__character-dob {
+  color: #fabf59;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.characters-section__characters-gradient {
+  width: 295px;
+  height: 272px;
+  border-radius: 0 0 20px 20px;
+  background: linear-gradient(0deg, #0f0f0f -0.99%, rgba(15, 15, 15, 0.74) 51.85%, rgba(15, 15, 15, 0) 86.04%);
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+.lang-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 8px 14px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.lang-toggle:hover {
+  background-color: #444;
+}

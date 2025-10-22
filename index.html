@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/maksym-b.css">
+
+  <title>Гаррі Поттер</title>
+</head>
+<body>
+  <section class="characters-section">
+    <div class="container">
+      <h3 class="characters-section__title">Гаррі Поттер (Вікі)</h3>
+  
+      <div class="characters-section__controls">
+      <button class="lang-toggle" id="lang-toggle">EN</button>
+        
+        <div class="characters-section__search-block">
+          <label for="character-search" class="characters-section__search-label">Пошук персонажа</label>
+          <input type="text" id="character-search" placeholder="Введіть ім'я персонажа...">
+        </div>
+
+        <div class="characters-section__filter">
+          <button class="characters-section__filter-btn" data-house="Gryffindor">
+            <img src="./gryffindor.svg" alt="Gryffindor">
+            <span class="characters-section__btns-text">Gryffindor</span>
+          </button>
+          <button class="characters-section__filter-btn" data-house="Slytherin">
+            <img src="./slytherin.svg" alt="Slytherin">
+            <span class="characters-section__btns-text">Slytherin</span>
+          </button>
+          <button class="characters-section__filter-btn" data-house="Ravenclaw">
+            <img src="./ravenclaw.svg" alt="Ravenclaw">
+            <span class="characters-section__btns-text">Ravenclaw</span>
+          </button>
+          <button class="characters-section__filter-btn" data-house="Hufflepuff">
+            <img src="./hufflepuff.svg" alt="Hufflepuff">
+            <span class="characters-section__btns-text">Hufflepuff</span>
+          </button>
+          <button class="characters-section__filter-btn" data-house="all">
+            <span class="characters-section__btns-text">Усі</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="characters-section__characters">
+        <div class="characters-section__characters-card" data-house="Gryffindor">
+          <img src="./test.png" alt="" class="characters-section__characters-card-img">
+          <div class="characters-section__characters-card-info">
+            <p class="characters-section__character-name">Harry Potter</p>
+            <p class="characters-section__character-descr">The Boy Who Lived</p>
+            <p class="characters-section__character-house">Gryffindor</p>
+            <p class="characters-section__character-dob">31-07-1980</p>
+          </div>
+        </div>
+        <div class="characters-section__characters-card" data-house="Slytherin">
+          <img src="./11c5a3dc93a313731e411fc0baf3e109.jpg" alt="" class="characters-section__characters-card-img">
+          <div class="characters-section__characters-card-info">
+            <p class="characters-section__character-name">Draco Malfoy</p>
+            <p class="characters-section__character-descr">Slytherin Student</p>
+            <p class="characters-section__character-house">Slytherin</p>
+            <p class="characters-section__character-dob">05-06-1980</p>
+          </div>
+        </div>
+        <div class="characters-section__characters-card" data-house="Ravenclaw">
+          <img src="./LunaLovegood_WB_F5_LunaLovegoodPromoCloseUp_Promo_080615_Port.jpg" alt="" class="characters-section__characters-card-img">
+          <div class="characters-section__characters-card-info">
+            <p class="characters-section__character-name">Luna Lovegood</p>
+            <p class="characters-section__character-descr">Ravenclaw Student</p>
+            <p class="characters-section__character-house">Ravenclaw</p>
+            <p class="characters-section__character-dob">13-02-1981</p>
+          </div>
+        </div>
+        <div class="characters-section__characters-card" data-house="Hufflepuff">
+          <img src="./Cedric-Diggory-cedric-diggory-2719265-1842-2560.webp" alt="" class="characters-section__characters-card-img">
+          <div class="characters-section__characters-card-info">
+            <p class="characters-section__character-name">Cedric Diggory</p>
+            <p class="characters-section__character-descr">Hufflepuff Student</p>
+            <p class="characters-section__character-house">Hufflepuff</p>
+            <p class="characters-section__character-dob">01-09-1977</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="./script.js"></script>
+</body>
+</html>
